@@ -5,55 +5,55 @@ let totalCompra = 0
 let sectorSeleccionado = parseInt(prompt('Selecciona el sector del estadio que desee: 1. Popular Este - 2. Popular Oeste - 3. Platea Norte - 4. Platea Sur - 5. Platea Sur Alta - 6. Visitantes'))
 let seguirComprando = true
 let decision
-let productos = []
+let sector = []
 let carrito = []
 
 const popularEste = {
     nombre:'Popular Este',
     precio: 2000
   }
-productos.push(popularEste)
+sector.push(popularEste)
 const popularOeste = {
     nombre:'Popular Oeste',
     precio: 2500,
 }
-  productos.push(popularOeste)
+  sector.push(popularOeste)
   const plateaNorte = {
     nombre:'Platea Norte',
     precio: 6500
 }
-productos.push(plateaNorte)
+sector.push(plateaNorte)
 const plateaSur = {
     nombre:'Platea Sur',
     precio: 4700
 }
-productos.push(plateaSur)
+sector.push(plateaSur)
 const plateaSurAlta = {
     nombre: 'Platea Sur Alta',
     precio: 3000
 }
-productos.push(plateaSurAlta)
+sector.push(plateaSurAlta)
 const visitantes = {
     nombre: 'Visitantes',
     precio: 14500
 }
-productos.push(visitantes)
+sector.push(visitantes)
 
-console.log(productos)
+console.log(sector)
 
 while(seguirComprando === true){
 if(sectorSeleccionado === 1) {
-    carrito.push(productos[0])
+    carrito.push(sector[0])
 } else if(sectorSeleccionado === 2) {
-    carrito.push(productos[1])
+    carrito.push(sector[1])
 }else if(sectorSeleccionado === 3) {
-    carrito.push(productos[2])
+    carrito.push(sector[2])
 }else if(sectorSeleccionado === 4) {
-    carrito.push(productos[3])
+    carrito.push(sector[3])
 }else if(sectorSeleccionado === 5) {
-    carrito.push(productos[4])
+    carrito.push(sector[4])
 }else if(sectorSeleccionado === 6) {
-    carrito.push(productos[5])
+    carrito.push(sector[5])
     alert('El sector visitante abona un impuesto')
 } else{
     sectorSeleccionado = parseInt(prompt('Sector no valido, por favor ingrese un sector existente: 1. Popular Este - 2. Popular Oeste - 3. Platea Norte - 4. Platea Sur - 5. Platea Sur Alta - 6. Visitantes'))
