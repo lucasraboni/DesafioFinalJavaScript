@@ -1,0 +1,38 @@
+[
+    {
+        "id":"001",
+        "nombre": "Popular Este",
+        "precio":2000,
+        "imagen":"./multimedias/popularEste.jpg"
+    },
+    {
+        "id":"002",
+        "nombre": "Popular Oeste",
+        "precio":2500,
+        "imagen":"./multimedias/PopularOeste.jpg"
+    },
+    {
+        "id":"003",
+        "nombre": "Platea Norte",
+        "precio":6500,
+        "imagen":"./multimedias/PlateaNorteBaja.jpg"
+    },
+    {
+        "id":"004",
+        "nombre": "Platea Sur",
+        "precio":4700,
+        "imagen":"./multimedias/PlateaSurBaja.jpg"
+    },
+    {
+        "id":"005",
+        "nombre": "Platea Sur Alta",
+        "precio":3000,
+        "imagen":"./multimedias/PlateaSurAlta.jpg"
+    },
+    {
+        "id":"006",
+        "nombre": "Visitante",
+        "precio":14500,
+        "imagen":"./multimedias/sectorVisitantes.jpg"
+    }
+]
