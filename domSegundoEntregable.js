@@ -59,12 +59,11 @@ function agregarAlCarrito(Sectores) {
       let carritoFiltrado = carrito.filter(sect => sect.id != Sectores.id)
       carrito = [
           ...carritoFiltrado, 
-          { ...enCarrito, cantidad: enCarrito.cantidad + 1}
+          { ...enCarrito, cantidad: enCarrito.cantidad++} //operador ++
       ]
   }
 
   contador.innerHTML =  carrito.reduce((acc, sect) => acc + sect.cantidad, 0)
-  
 }
 const contador = document.getElementById('cartCounter')
 contador.innerHTML = carrito.reduce((acc, sect) => acc + sect.cantidad, 0)
