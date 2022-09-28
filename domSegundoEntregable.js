@@ -1,6 +1,19 @@
 let sector = []
 let carrito = []
 
+Swal.fire({
+  title: ' TENE CUIDADO',
+  text: "No compartir entradas con personas desconocidas",
+  icon: 'warning',
+  background: '#1a75b7',
+  iconColor: 'white',
+  color: 'white',
+  showCancelButton: false,
+  showConfirmButton: false,
+  timer:5000
+})
+
+
 class Sectores{
   constructor(id,nombre,precio,imagen){
     this.id = id
