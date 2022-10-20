@@ -1,5 +1,5 @@
 let sector = []
-let carrito = []
+let carrito = localStorage.getItem('carrito') ? localStorage.getItem('carrito') : []
 
 Swal.fire({
   title: ' TENE CUIDADO',
@@ -68,6 +68,7 @@ function agregarAlCarrito(Sectores) {
   
   if(!enCarrito){
       carrito.push({...Sectores, cantidad: 1})
+      localStorage.setItem('carrito', JSON.stringify(carrito))
   } else {
       let carritoFiltrado = carrito.filter(sect => sect.id != Sectores.id)
       carrito = [
@@ -86,6 +87,8 @@ sector.forEach((sector) => {
   option.setAttribute('id', `${sector.id}`)
   selectTag.append(option)
 })
+
+
 
 
 
