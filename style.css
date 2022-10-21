@@ -283,3 +283,19 @@ th{
     color: white;
     background: #1a75b7;
 }
+
+.productoEnCarrito{
+    display: inline-block;
+    flex-wrap: wrap;
+}
+
+.btn-danger{
+    background-color: #125585;
+    border-color: white;
+}
+
+h4{
+    padding: 3rem;
+    font-size: 30px;
+}
+
