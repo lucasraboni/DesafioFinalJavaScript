@@ -12,12 +12,18 @@
 <body>
     <h4 class="text-center text-white mb-4"> PEDIDOS DE COMPRA </h4>
     
-    <div id="carrito"> 
+    <div id="carrito" class="row container-xl align-items-center"> 
     </div>
 
     <div class="text-center text-white mb-4" id="precio"></div>
-    <button id="vaciarCarrito" class="botonAgregar btn btn-danger"> Vaciar Carrito </button>
-    <button id="comprarTickets" class="botonComprar btn btn-danger"> Comprar </button>
-    <script src="/carrito.js"></script>
+    <div class="text-center">
+        <button id="vaciarCarrito" class="botonAgregar btn btn-color"> Vaciar Carrito </button>
+        <button id="comprarTickets" class="botonComprar btn btn-color"> Comprar </button>
+        <a href="./Venta.html">
+            <button id="volverIndex" class="botonVolver btn btn-color"> Regresar </button>
+        </a>
+    </div>
+    <script src="/carrito.js"></script>\
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

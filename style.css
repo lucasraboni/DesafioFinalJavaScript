@@ -287,15 +287,23 @@ th{
 .productoEnCarrito{
     display: inline-block;
     flex-wrap: wrap;
+    color: white;
+    margin: 15px;
 }
 
-.btn-danger{
+.btn-color{
     background-color: #125585;
     border-color: white;
+    color: white;
+}
+
+.btn-color:hover{
+    color: #1a75b7;
+    background: white;
+    border-color: #1a75b7;
 }
 
 h4{
     padding: 3rem;
     font-size: 30px;
 }
-
